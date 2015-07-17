@@ -1,3 +1,4 @@
 class Photographer < ActiveRecord::Base
-  has_many :photo
+  validates :name, presence: true, uniqueness: true
+  has_many :photos
 end

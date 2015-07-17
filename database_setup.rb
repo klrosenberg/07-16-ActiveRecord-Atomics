@@ -12,3 +12,9 @@ unless ActiveRecord::Base.connection.table_exists?(:photos)
     t.integer :photographer_id
   end  
 end
+
+unless ActiveRecord::Base.connection.table_exists?(:albums)
+  ActiveRecord::Base.connection.create_table :albums do |t|
+    t.text :title
+  end
+end
