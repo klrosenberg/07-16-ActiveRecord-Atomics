@@ -1,3 +1,6 @@
+# Create database for this program.
+DATABASE = SQLite3::Database.new("beerarchive.db")
+
 unless ActiveRecord::Base.connection.table_exists?(:photographers)
   ActiveRecord::Base.connection.create_table :photographers do |t|
     t.string :name
@@ -25,3 +28,6 @@ unless ActiveRecord::Base.connection.table_exists?(:albums_photos)
       t.integer :album_id
     end
   end
+
+# Return results as an Array of Hashes.
+DATABASE.results_as_hash = true
