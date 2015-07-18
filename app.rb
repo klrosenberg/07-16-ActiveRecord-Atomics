@@ -3,7 +3,11 @@ require 'bundler/setup'
 
 require "pry"
 require "active_record"
+require "active_support"
+require "active_support/inflector"
 require "sqlite3"
+require "sinatra"
+require "sinatra/reloader"
 
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'photography.db')
 
