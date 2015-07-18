@@ -15,5 +15,10 @@ require_relative "models/photographer.rb"
 require_relative "models/photo.rb"
 require_relative "models/album.rb"
 
+# Controllers
+require_relative "controllers/photographers.rb"
+require_relative "controllers/photos.rb"
+require_relative "controllers/albums.rb"
+
 # Database
 require_relative 'database_setup.rb'

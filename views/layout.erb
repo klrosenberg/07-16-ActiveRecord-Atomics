@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Share</title>
+  <link rel="stylesheet" href="global.css">
+  <script type="text/javascript" src="/global.js"></script>
+</head>
+<body>
+  
+  <%= yield %>
+  
+  <div id="responsive_menu">
+    <div>   
+      <p>
+        <a href="#" onclick="overlay()">☰</a>
+      </p>
+      <ul>
+        <link><a href="/photographers/sub_menu_photographer">Photographers</a></link>
+        <link><a href="/photos/sub_menu_photo">Photos</a></link>
+        <link><a href="/albums/sub_menu_album">Albums</a></link>
+        <li><a href="/home">Main Menu</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
