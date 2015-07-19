@@ -11,22 +11,37 @@ html{
 
 body{
   margin: 0;
-}
-
-h1{
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-align: center;
 }
 
-a{
-  
-  
+h1{
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #747478;
+  color: #fff;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+}
+
+.menu li{
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.menu a:link{
+  display: block;
+  text-decoration: none;
 }
 
 /* Media queries for floats */
 @media (min-width: 500px){
-a{
+li{
   width: 33.33%;
   min-width: 100px;
   float:left;
