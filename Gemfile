@@ -1,7 +1,9 @@
-source "https://rubygems.org" do
-  gem 'pry', '0.10.1'
-  gem 'sqlite3', '1.3.10'
-  gem 'activerecord'
-end
-
-ruby '2.2.2'
+source "https://rubygems.org"
+gem 'pry'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'activerecord'
+gem 'activesupport'
+gem 'sqlite3', :groups => [:development, :test]
+gem 'pg', :groups => [:production]
+gem 'bcrypt'
