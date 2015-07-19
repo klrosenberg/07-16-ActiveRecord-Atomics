@@ -1,9 +1,29 @@
 <h1>Photo Share</h1>
 <div class="menu">
-  <ul>
-    <li><link><a href="/photographers/sub_menu_photographer">Photographers</a></link></li>
-    <li><link><a href="/photos/sub_menu_photo">Photos</a></link></li>
-    <li><link><a href="/albums/sub_menu_album">Albums</a></link></li>
+  <ul id="tabs">
+    <li><link><a href="#photographers">Photographers</a></link></li>
+    <p class="tab_content hide" id="photographers">
+      <a href="/photographers/add">Add new photographer</a>
+      <a href="/photographers/all">View photographers</a>
+      <a href="/photographers/update">Update photographer</a>
+      <a href="/photographers/delete">Delete photographer</a>
+    </p>
+    
+    <li><link><a href="#photos">Photos</a></link></li>
+    <p class="tab_content hide" id="photos">
+      <li><a href="/photos/add">Add new photo</a></li>
+      <li><a href="/photos/all_by_photographer">View photos by photographer</a></li>
+      <li><a href="/photos/all_by_album">View photos by album</a></li>
+      <li><a href="/photos/delete">Delete photo</a></li>
+    </p>
+    
+    <li><link><a href="#albums">Albums</a></link></li>
+    <p clas="tab_content hide" id="photos">
+      <li><a href="/albums/add">Add new album</a></li>
+      <li><a href="/albums/all">View all albums</a></li>
+      <li><a href="/albums/update">Add photo to album</a></li>
+      <li><a href="/albums/delete">Delete album</a></li>
+    </p>
   </ul>
 </div>
 

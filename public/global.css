@@ -14,6 +14,7 @@ body{
   text-align: center;
 }
 
+/* Header*/
 h1{
   margin: 0;
   padding-top: 20px;
@@ -22,6 +23,7 @@ h1{
   color: #fff;
 }
 
+/* Main menu list */
 ul{
   margin: 0;
   padding: 0;
@@ -43,6 +45,18 @@ li{
   text-decoration: none;
 }
 
+.menu #tabs{
+  background-color: green;
+}
+
+p.tab_content{
+  margin: 0;
+  padding: 10px;
+  line-height: 15px;
+  background-color: purple;
+}
+
+/* Top photo gallery */
 .gallery h3{
   margin-bottom: 0;
 }
@@ -50,6 +64,7 @@ li{
 .gallery li{
   padding: 20px;
 }
+
 
 /* Media queries for floats */
 @media (min-width: 500px){
