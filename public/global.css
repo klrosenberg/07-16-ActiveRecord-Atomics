@@ -21,6 +21,7 @@ h1{
   padding-bottom: 20px;
   background-color: #747478;
   color: #fff;
+  border-bottom: 1px solid black;
 }
 
 /* Main menu list */
@@ -46,14 +47,19 @@ li{
 }
 
 .menu #tabs{
-  background-color: green;
+  background-color: rgb(50, 50, 50);
 }
 
+/* Accorion tab */
 p.tab_content{
   margin: 0;
   padding: 10px;
+  border-bottom: 1px solid black;
+  background-color: rgb(110, 110, 110);
+}
+
+p.tab_content a{
   line-height: 15px;
-  background-color: purple;
 }
 
 /* Top photo gallery */
@@ -67,14 +73,10 @@ p.tab_content{
 
 
 /* Media queries for floats */
-@media (min-width: 500px){
-  li{
-    width: 33.33%;
-    min-width: 100px;
-    float:left;
-  }
-  
+@media (min-width: 600px){
   .menu li{
-    border-bottom: 1px solid black;
+    width: 33.3%;
+    min-width: 200px;
+    float: left;
   }
 }
