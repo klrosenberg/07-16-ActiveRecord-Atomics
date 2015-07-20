@@ -1,0 +1,9 @@
+<h3>Please select photographer to see photos</h3>
+  <form action="photos_by_photographer">
+    <p><select name="id" value="">
+      <option >--------</option>
+      <% Photographer.all.each do |photographer| %>
+      <option value="<%= photographer.id %>"><%= photographer.name %></option>
+      <% end %>
+    </select></p>
+  </form>
