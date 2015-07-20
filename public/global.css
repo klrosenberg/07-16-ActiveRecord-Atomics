@@ -50,7 +50,7 @@ li{
   background-color: rgb(50, 50, 50);
 }
 
-/* Accorion tab */
+/* Accordion tab */
 p.tab_content{
   margin: 0;
   padding: 10px;
@@ -60,6 +60,10 @@ p.tab_content{
 
 p.tab_content a{
   line-height: 15px;
+}
+
+p.tab_content.hide {
+  
 }
 
 /* Top photo gallery */

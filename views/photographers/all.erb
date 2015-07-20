@@ -1,0 +1,10 @@
+<h2>Photographers</h2>
+<div>
+  <% Photographer.all.each do |photographer| %>
+    <ul>
+      <li>
+        <%= photographer.name %>
+      </li>
+    </ul>
+  <% end %>
+</div>

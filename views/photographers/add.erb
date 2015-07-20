@@ -1,0 +1,13 @@
+<h2>Add new photographer</h2>
+<% if @error1 %>
+<p>User was not saved. Users may only be added once.</p>
+<% end %>
+<% if @error2 %>
+<p>Please enter the user information in the fields.</p>
+<% end %>
+<h4>Please enter the information of the new photographer.</h4>
+<form action="/saved">
+  <p>Name</p>
+  <input type="text" placeholder="User name" name="name">
+  <p><input type="submit"></p>
+</form>
